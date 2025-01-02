@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Exam</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container"> 
+        <!-- Timer Section -->
+        <div class="timer" id="timer">Time Left: 45:00</div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-container" id="quiz-container">
+            <div class="question-container" id="question-container">
+                <!-- Questions will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button id="prevBtn" onclick="prevQuestion()">Previous</button>
+            <button id="nextBtn" onclick="nextQuestion()">Next</button>
+            <button id="submitBtn" onclick="submitQuiz()">Submit</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-container" id="results-container" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+            <div id="review-container"></div>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
